@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color:rgba(217, 217, 217, 1)
+}
+h1{
+    text-align: center;
+    font-size:2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(248, 117, 22, 1);
+    margin-top: 15rem;
+}
