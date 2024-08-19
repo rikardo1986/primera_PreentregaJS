@@ -54,16 +54,24 @@ if (user === "admin") {
         alert("Producto modificado correctamente: " + producto);
         menuPrincipal();
     }
-
+    
+    // eliminar productos con un ciclo for
     function eliminarProducto() {
-        let producto = prompt(`Elija el producto que desea eliminar:
-        1. Notebook
-        2. Cámara web
-        3. Disco duro
-        4. Parlantes
-        5. Otro`);
-
-        alert("Producto eliminado correctamente: " + producto);
+        let productos = ['Notebook', 'Cámara web', 'Disco duro', 'Parlantes', 'Otro'];
+        let mensaje = "Elija el número del producto que desea eliminar:\n";
+    
+        for (let i = 0; i < productos.length; i++) {
+            mensaje += (i + 1) + ". " + productos[i] + "\n";
+        }
+    
+        let producto = prompt(mensaje);
+    
+        let index = parseInt(producto) - 1;
+        if (index >= 0 && index < productos.length) {
+            alert("Producto eliminado correctamente: " + productos[index]);
+        } else {
+            alert("Opción no válida");
+        }
         menuPrincipal();
     }
 
