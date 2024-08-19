@@ -11,7 +11,7 @@ if (user === "admin") {
         2. Modificar producto
         3. Eliminar producto
         4. Exportar datos del inventario`);
-
+        
         switch (actividad) {
             case '1':
                 agregarProducto();
@@ -54,7 +54,7 @@ if (user === "admin") {
         alert("Producto modificado correctamente: " + producto);
         menuPrincipal();
     }
-    
+
     // eliminar productos con un ciclo for
     function eliminarProducto() {
         let productos = ['Notebook', 'Cámara web', 'Disco duro', 'Parlantes', 'Otro'];
